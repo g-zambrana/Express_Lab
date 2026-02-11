@@ -3,7 +3,7 @@ const app = express()
 
 app.get('/', (req, res) => {
     console.log('Here');
-    res.render('index')
+    res.render('index');
 });
 
 
@@ -13,5 +13,5 @@ app.get('/potato', (req,res)=>{
 });
 
 
-
+app.set('view engine', 'ejs');
 app.listen(3030);
